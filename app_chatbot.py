@@ -37,7 +37,7 @@ def main():
     system_prompt = st.sidebar.text_input("Prompt del sistema:")
     model = st.sidebar.selectbox(
         'Elige un modelo:',
-        ['llama3-8b-8192', 'llama3-70b-8192', 'mixtral-8x7b-32768', 'gemma-7b-it']
+        ['llama3-70b-8192', 'llama3-8b-8192' , 'mixtral-8x7b-32768', 'gemma-7b-it']
     )
     conversational_memory_length = st.sidebar.slider('Tamaño memoria de la conversación:', 1, 10, value = 5)
 
